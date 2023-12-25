@@ -13,6 +13,6 @@ namespace CoursesApi.Services
         }
 
         public IEnumerable<Course> GetAllCourses() => _repository.GetAll();
-        public Course GetCourseById(int id) => _repository.GetById(id);
+        public Course? GetCourseById(int id) => _repository.GetById(id);
     }
 }

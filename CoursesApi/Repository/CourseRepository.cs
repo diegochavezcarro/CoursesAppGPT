@@ -12,6 +12,6 @@ namespace CoursesApi.Repository
         };
 
         public IEnumerable<Course> GetAll() => _courses;
-        public Course GetById(int id) => _courses.Find(c => c.Id == id);
+        public Course? GetById(int id) => _courses.Find(c => c.Id == id);
     }
 }

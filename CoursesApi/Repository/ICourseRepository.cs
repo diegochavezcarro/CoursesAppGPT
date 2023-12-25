@@ -7,6 +7,6 @@ namespace CoursesApi.Repository
     public interface ICourseRepository
     {
         IEnumerable<Course> GetAll();
-        Course GetById(int id);
+        Course? GetById(int id);
     }
 }
