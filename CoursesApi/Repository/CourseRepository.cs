@@ -13,5 +13,13 @@ namespace CoursesApi.Repository
 
         public IEnumerable<Course> GetAll() => _courses;
         public Course? GetById(int id) => _courses.Find(c => c.Id == id);
+
+        public Course Add(Course course)
+        {
+            course.Id = _courses.Max(c => c.Id) + 1;
+            _courses.Add(course);
+            return course;
+        }
+
     }
 }

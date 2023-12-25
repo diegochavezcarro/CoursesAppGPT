@@ -7,5 +7,6 @@ namespace CoursesApi.Services
     {
         IEnumerable<Course> GetAllCourses();
         Course? GetCourseById(int id);
+        Course CreateCourse(Course course);
     }
 }

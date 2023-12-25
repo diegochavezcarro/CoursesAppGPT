@@ -14,5 +14,11 @@ namespace CoursesApi.Services
 
         public IEnumerable<Course> GetAllCourses() => _repository.GetAll();
         public Course? GetCourseById(int id) => _repository.GetById(id);
+
+        public Course CreateCourse(Course course)
+        {
+            return _repository.Add(course);
+        }
+
     }
 }

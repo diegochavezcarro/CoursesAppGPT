@@ -37,5 +37,17 @@ namespace CoursesApi.Controllers
             if (course == null) return NotFound();
             return Ok(course);
         }
+        
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Course))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult CreateCourse(Course course)
+        {
+            var newCourse = _service.CreateCourse(course);
+            if (newCourse == null) return BadRequest();
+
+            return CreatedAtAction(nameof(GetById), new { id = newCourse.Id }, newCourse);
+        }
+
     }
 }

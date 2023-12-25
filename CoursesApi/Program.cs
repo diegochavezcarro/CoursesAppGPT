@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+//builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddSingleton<ICourseRepository, CourseRepository>();
 builder.Services.AddScoped<ICourseService, CourseService>();
 var app = builder.Build();
 

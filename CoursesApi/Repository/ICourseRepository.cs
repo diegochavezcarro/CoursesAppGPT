@@ -8,5 +8,7 @@ namespace CoursesApi.Repository
     {
         IEnumerable<Course> GetAll();
         Course? GetById(int id);
+
+        Course Add(Course course);
     }
 }
