@@ -31,3 +31,4 @@
 /home/dchavez/code/dotnet/CoursesAppGPT/CoursesApi/obj/Debug/net8.0/CoursesApi.pdb
 /home/dchavez/code/dotnet/CoursesAppGPT/CoursesApi/obj/Debug/net8.0/CoursesApi.genruntimeconfig.cache
 /home/dchavez/code/dotnet/CoursesAppGPT/CoursesApi/obj/Debug/net8.0/ref/CoursesApi.dll
+/home/dchavez/code/dotnet/CoursesAppGPT/CoursesApi/obj/Debug/net8.0/CoursesApi.sourcelink.json
