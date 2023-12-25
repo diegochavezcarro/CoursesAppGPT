@@ -44,6 +44,5 @@ namespace CoursesApi.IntegrationTests
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
         }
 
-        
     }
 }
