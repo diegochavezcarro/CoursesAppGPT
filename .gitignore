@@ -1,0 +1,70 @@
+# Directories #
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Pp]roperties/
+[Tt]est[Rr]esults/
+
+# Files #
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pdb
+*.exe
+*.dll
+*.swp
+*.swp
+*.[Cc]ache
+*.bak
+*.tmp
+*.err
+
+# Visual Studio files #
+.vs/
+.vscode/
+
+# Rider files #
+.idea/
+
+# OS generated files #
+.DS_Store
+Thumbs.db
+
+# Build results #
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Tt]est[Rr]esults/
+
+# NuGet #
+packages/
+*.nupkg
+*.snupkg
+nuget.exe
+NuGet.config
+NuGet.targets
+NuGet.Props
+*.nuget.props
+*.nuget.targets
+project.assets.json
+project.nuget.cache
+project.lock.json
+nuget-build/
+
+# Tooling #
+_ReSharper*/
+_TeamCity*
+*.dotCover
+
+# Ignore the local user settings file created by Visual Studio
+.vscode/settings.json
+
+
