@@ -43,5 +43,7 @@ namespace CoursesApi.IntegrationTests
             var response = await _client.GetAsync("/courses/999");
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
         }
+
+        
     }
 }
