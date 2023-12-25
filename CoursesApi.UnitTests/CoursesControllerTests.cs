@@ -43,5 +43,34 @@ namespace CoursesApi.Tests
             var result = _controller.GetById(id);
             Assert.IsType<NotFoundResult>(result);
         }
+
+        [Fact]
+        public void CreateCourse_ValidCourse_ReturnsCreatedResponse()
+        {
+            // Arrange
+            var newCourse = new Course { Name = "New Course" };
+            _serviceMock.Setup(s => s.CreateCourse(It.IsAny<Course>())).Returns(newCourse);
+
+            // Act
+            var result = _controller.CreateCourse(newCourse);
+
+            // Assert
+            var actionResult = Assert.IsType<CreatedAtActionResult>(result);
+            var returnValue = Assert.IsType<Course>(actionResult.Value);
+            Assert.Equal("New Course", returnValue.Name);
+        }
+
+        [Fact]
+        public void CreateCourse_NullCourse_ReturnsBadRequest()
+        {
+            // Arrange
+            Course newCourse = null;
+
+            // Act
+            var result = _controller.CreateCourse(newCourse);
+
+            // Assert
+            Assert.IsType<BadRequestResult>(result);
+        }
     }
 }

@@ -35,5 +35,22 @@ namespace CoursesApi.Tests
             Assert.NotNull(result);
             Assert.Equal(id, result.Id);
         }
+
+        [Fact]
+        public void AddCourse_AddsCourse()
+        {
+            var course = new Course
+            {
+                Id = 3,
+                Name = "Course 3"
+            };
+
+            _repositoryMock.Setup(repo => repo.Add(course));
+            _service.CreateCourse(course);
+
+            _repositoryMock.Verify(repo => repo.Add(course), Times.Once);
+        }
+
+        
     }
 }

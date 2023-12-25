@@ -1,5 +1,6 @@
 using Xunit;
 using CoursesApi.Repository;
+using CoursesApi.Models;
 
 namespace CoursesApi.Tests
 {
@@ -28,5 +29,24 @@ namespace CoursesApi.Tests
             Assert.NotNull(result);
             Assert.Equal(id, result.Id);
         }
+
+        [Fact]
+        public void Add_AddsCourse()
+        {
+            var course = new Course
+            {
+                Id = 3,
+                Name = "Course 3"
+            };
+
+            _repository.Add(course);
+
+            var result = _repository.GetById(course.Id);
+            Assert.NotNull(result);
+            Assert.Equal(course.Id, result.Id);
+            Assert.Equal(course.Name, result.Name);
+
+        }
+
     }
 }
