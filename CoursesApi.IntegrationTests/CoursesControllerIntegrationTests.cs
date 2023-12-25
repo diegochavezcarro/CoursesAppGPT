@@ -37,6 +37,11 @@ namespace CoursesApi.IntegrationTests
             Assert.Equal(1, course.Id);
         }
 
-        // Additional tests...
+        [Fact]
+        public async Task GetCourseById_NonExistingId_ReturnsNotFoundResponse()
+        {
+            var response = await _client.GetAsync("/courses/999");
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        }
     }
 }
