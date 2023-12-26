@@ -1,6 +1,6 @@
 using System.Reflection;
 using CoursesApi.Repository;
-using CoursesApi.Services;
+//using CoursesApi.Services;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
