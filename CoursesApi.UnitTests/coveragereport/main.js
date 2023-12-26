@@ -221,11 +221,15 @@ var assemblies = [
   {
     "name": "CoursesApi",
     "classes": [
-      { "name": "CoursesApi.Controllers.CoursesController", "rp": "CoursesApi_CoursesController.html", "cl": 18, "ucl": 0, "cal": 18, "tl": 53, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "CoursesApi.Commands.CreateCourseCommand", "rp": "CoursesApi_CreateCourseCommand.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 10, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "CoursesApi.Commands.CreateCourseCommandHandler", "rp": "CoursesApi_CreateCourseCommandHandler.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "CoursesApi.Controllers.CoursesController", "rp": "CoursesApi_CoursesController.html", "cl": 19, "ucl": 0, "cal": 19, "tl": 54, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "CoursesApi.Models.Course", "rp": "CoursesApi_Course.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "CoursesApi.Queries.GetAllCoursesQueryHandler", "rp": "CoursesApi_GetAllCoursesQueryHandler.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 24, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "CoursesApi.Queries.GetCourseByIdQuery", "rp": "CoursesApi_GetCourseByIdQuery.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 10, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "CoursesApi.Queries.GetCourseByIdQueryHandler", "rp": "CoursesApi_GetCourseByIdQueryHandler.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "CoursesApi.Repository.CourseRepository", "rp": "CoursesApi_CourseRepository.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 25, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "CoursesApi.Services.CourseService", "rp": "CoursesApi_CourseService.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 24, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "Program", "rp": "CoursesApi_Program.html", "cl": 0, "ucl": 14, "cal": 14, "tl": 29, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Program", "rp": "CoursesApi_Program.html", "cl": 0, "ucl": 14, "cal": 14, "tl": 33, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
